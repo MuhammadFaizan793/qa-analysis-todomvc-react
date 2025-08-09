@@ -1,0 +1,35 @@
+# Bug Reports – Todo MVC (React)
+
+The following observations are documented as enhancement suggestions, rather than functional defects, with structured reporting to aid clear communication and actionable insight.
+Issue 1 – Enhancement Suggestion: Special Characters Accepted in Todo Input
+ Type: Enhancement (Validation Suggestion)
+ Summary: The input field allows any special characters (e.g., “! @#$") as valid Todo entries. Validation could improve data integrity and user experience.
+ Environment: Chrome (latest), Windows 10; live app: https://todomvc.com/examples/react/dist/
+ Steps to Reproduce:
+  1. Navigate to the Todo app.
+  2. Enter only special characters in the input field (e.g., `! @#$`).
+  3. Press Enter or click "Add".
+ Expected Result: The input should be validated, showing an error message or preventing the creation of an invalid Todo item.
+ Actual Result: The input is accepted and added as a valid Todo item.
+ Recommendation: Implement input validation either client side or server side to allow only valid alphanumeric entries where applicable: content Reference[oaicite:1] {index=1}.
+ Severity: Low functional but may reduce UX clarity.
+
+
+
+Issue 2 – UX Suggestion: No Undo/Redo After Clearing Completed Tasks
+ Type: UX Improvement
+ Summary: After clearing completed items, there is no way to undo the action, risking accidental removal of data.
+ Steps to Reproduce:
+  1. Add a task and mark it as completed.
+  2. Click “Clear completed”.
+  3. Observe that deleted tasks cannot be restored.
+ Recommendation: Consider adding an “Undo” or “Redo” option for better usability and user control.
+ Severity: Medium   affects UX flow but doesn’t break core functionality.
+
+
+Issue 3 – Navigation Enhancement: Missing In-app “Back” Button
+ Type: UX Enhancement
+ Summary: The app lacks an internal “Back” button; users must rely on browser navigation to return to previous states.
+ Context: While acceptable in many single page apps, some SPA designs benefit from explicit navigation controls.
+ Recommendation: For broader SPA implementations, consider adding in-app navigation controls to enhance user flow.
+ Severity: Low   browser-based navigation is standard, but this could be a design improvement. 
