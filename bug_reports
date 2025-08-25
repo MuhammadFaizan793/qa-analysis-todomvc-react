@@ -1,5 +1,8 @@
 # Bug Reports – Todo MVC (React)
 
+
+// pull request
+
 The following observations are documented as enhancement suggestions, rather than functional defects, with structured reporting to aid clear communication and actionable insight.
 Issue 1 – Enhancement Suggestion: Special Characters Accepted in Todo Input
  Type: Enhancement (Validation Suggestion)
